@@ -1,0 +1,167 @@
+body {
+  font-family: "Montserrat", sans-serif;
+
+  background-image: url(https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.main-container {
+  padding: 24px 16px;
+  justify-items: center;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+h2.main-heading {
+  border-bottom: 4px solid #ff4460;
+  padding: 8px 32px;
+  margin-top: 0;
+  margin-bottom: 42px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-container h3 {
+  font-weight: normal;
+  font-size: 15px;
+  text-align: ceter;
+  color: white;
+
+
+
+}
+
+.scratch-container1 {
+  width: 350px;
+  height: 150px;
+  background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/pavagadh-kalika-mata-temple/pavagadhtempletopview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  object-fit: centre;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.loc {
+  justify-content: center;
+  margin-left: 42%;
+}
+
+.scratch-container2 {
+  width: 350px;
+  height: 150px;
+  background-image: url(https://www.gujarattourism.com/content/dam/gujrattourism/images/heritage-sites/vadodara-heritage-walk/Vadodara-Heritage-Walk-Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  object-fit: centre;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+.scratch-card {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+canvas {
+  position: absolute;
+  cursor: grabbing;
+}
+
+
+.destination-container {
+  display: flex;
+  gap: 5px;
+}
+
+.code {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.article {
+  background: linear-gradient(to right,
+      hsl(98 100% 62%),
+      hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+/* CSS */
+.button-71 {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-71:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+.button-71:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .button-71 {
+    padding: 16px 48px;
+  }
+}

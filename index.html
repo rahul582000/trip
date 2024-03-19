@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome To Login Form</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <style type="text/css">
+    body {
+      margin: 0px;
+      background-image: url(https://getwallpapers.com/wallpaper/full/8/3/d/150940.jpg);
+      background-repeat: no-repeat;
+
+      justyfy-content: center;
+      color: #f7f7f7;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #main {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      border-radius: 5px;
+      padding-top: 20px;
+
+    }
+
+    #main table {
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    # login .name {
+      font-size: clamp(12px, 4vw, 20px);
+      justify-content: center;
+    }
+
+    /* css code for textbox */
+    #main .tb {
+      height: 20px;
+      width: 150px;
+      border: 1px solid #27a465;
+      color: #27a465;
+      font-weight: bold;
+      font-size: 12px;
+      border-left: 5px solid #f7f7f7;
+      opacity: 0.9;
+    }
+
+    /* css code for button*/
+    #main .btn {
+      width: 60px;
+      height: 25px;
+      outline: none;
+      font-weight: bold;
+      border: 0px solid #27a465;
+      text-shadow: 0px 0.5px 0.5px #fff;
+      border-radius: 2px;
+      font-weight: bold;
+      color: #27a465;
+      letter-spacing: 1px;
+      font-size: clamp(10px, 4vw, 15px);
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      transition: 1s;
+    }
+
+    #main .btn:hover {
+      background-color: #27a465;
+      outline: none;
+      border-radius: 2px;
+      text-color: red;
+      border: 1px solid #f1f1f1;
+      width: 70px;
+      height: 32px;
+    }
+
+    #main .h-tag {
+      text-align: center;
+      font-size: clamp(12px, 4vw, 32px);
+    }
+
+    #sur {
+
+      text-align: center;
+    }
+
+    h1 span {
+      font-size: clamp(70px, 8vw, 820px);
+      font-family: 'Bad Script', cursive;
+      color: white;
+      animation: glowing 5.75s linear infinite;
+    }
+
+    @keyframes glowing {
+
+      0%,
+      100% {
+        color: white;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #FF00FF,
+          0 0 20px #FF00FF,
+          0 0 40px #00b3ff,
+          0 0 80px #00b3ff,
+          0 0 120px #00b3ff,
+          0 0 200px #00b3ff,
+          0 0 300px #00b3ff,
+          0 0 400px #FF00FF;
+      }
+
+      5%,
+      95% {
+        color: white;
+        text-shadow: none;
+        filter: blur(0px);
+      }
+    }
+
+    h1 span:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    h1 span:nth-child(2) {
+      animation-delay: .75s;
+    }
+
+    h1 span:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    h1 span:nth-child(4) {
+      animation-delay: 2.25s;
+    }
+
+    h1 span:nth-child(5) {
+      animation-delay: 3s;
+    }
+
+    h1 span:nth-child(6) {
+      animation-delay: 3.75s;
+    }
+
+    h1 span:nth-child(7) {
+      animation-delay: 4.25s;
+    }
+
+    h1 span:nth-child(8) {
+      animation-delay: 5s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main div code -->
+  <div id="sur">
+    <h1>
+      <span>S</span>
+      <span>u</span>
+      <span>r</span>
+      <span>p</span>
+      <span>r</span>
+      <span>i</span>
+      <span>s</span>
+      <span>e</span>
+    </h1>
+  </div>
+
+
+  <div id="main">
+
+    <div class="h-tag">
+      <h2>Account Login</h2>
+    </div>
+    <!-- Login box -->
+    <div class="login">
+      <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+          <td class="name">Enter User Name :</td>
+          <td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
+        </tr>
+        <tr>
+          <td class="name">Enter Password :</td>
+          <td><input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+            <input type="submit" value="Login" class="btn" onClick="login()" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- login box div ending here.. -->
+  </div>
+  <!-- Main div ending here... -->
+  <script>
+
+    function login() {
+      var uname = document.getElementById("email").value;
+      var pwd = document.getElementById("pwd1").value;
+      if (uname == '') {
+        alert("please enter user name.");
+      }
+      else if (pwd == '') {
+        alert("enter the password");
+      }
+      else if (uname == 'Rahul' && pwd == 'lucifer') {
+
+        window.location = "page1/page1.html";
+      }
+    }
+    //Reset Inputfield code.
+    function clearFunc() {
+      document.getElementById("email").value = "";
+      document.getElementById("pwd1").value = "";
+    }
+
+  </script>
+</body>
+
+</html>
